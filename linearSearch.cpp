@@ -20,7 +20,7 @@ void swap_value(unsigned int& lha, unsigned int& rha) { // поменять ме
 }
 
 
-void my_sort(unsigned int*& ptr_array, unsigned int size) { // сортировка массива по возрастанию самым тупым методом
+void my_sort(unsigned int*& ptr_array, unsigned int size) { // сортировка массива по возрастанию самым простым методом
     for (unsigned int idx0 = 0; idx0 != size; ++idx0) {
         for (unsigned int idx1 = 0; idx1 != size; ++idx1) {
             if (idx0 < idx1 && ptr_array[idx0] > ptr_array[idx1]) {
