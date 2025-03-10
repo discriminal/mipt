@@ -42,7 +42,7 @@ unsigned int* generate_random_array( // генерация рандомного 
     return ptr_array; // возвращает УКАЗАТЕЛЬ на массив
 }
 
-void delete_array(unsigned int*& ptr_array) {  //не очень понятно зачем, но ок
+void delete_array(unsigned int*& ptr_array) {  
     delete[] ptr_array;
 }
 
