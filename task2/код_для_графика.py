@@ -19,15 +19,5 @@ plt.title('Сравнение времени работы')
 plt.legend()
 plt.grid(True)
 
-# Второй график - логарифмический масштаб
-plt.subplot(1, 2, 2)
-plt.loglog(N_values, brute_force_times, 'ro-', label='Полный перебор (O(N²))')
-plt.loglog(N_values, optimized_times, 'bo-', label='Оптимизированный (O(N))')
-plt.xlabel('Размер массива (N)')
-plt.ylabel('Время (мс)')
-plt.title('Логарифмический масштаб')
-plt.legend()
-plt.grid(True)
-
 plt.tight_layout()
 plt.show()
